@@ -1,0 +1,111 @@
+@import 'styles/variaveis';
+
+
+.conteudo {
+    background-color: $cinza;
+    border-radius: 2em;
+    margin: 2em 2em;
+    align-items: center;
+    display: flex;
+    font-family: $fontesecundaria;
+    
+    h2 {
+        font-size: 10em;
+    }
+
+    &__carro {
+        display: block;
+        text-align: center;
+            img {
+                position: relative;
+                z-index: 1;
+                bottom: 8em;
+                
+            }
+           h2 {
+            position: relative;
+            top: 0.3em;
+            font-size: 12em;
+            z-index: 0;
+            font-weight: 800;
+           }
+
+           select {
+            position: relative;
+            bottom: 10em;
+            font-family: $fontesecundaria;
+            text-transform: uppercase;
+            color: $cinza;
+            border-radius: 2em;
+            padding: 1em 3em;
+            background-color: $black;
+           }
+
+           select:hover {
+                transition: 0.5s;
+                cursor: pointer;
+                color: $yellow;
+           }
+    }
+
+    &__span {
+        display: inline-block;
+        border-radius: 2em;
+        border: 1px solid $black;
+        font-size: 1.2em;
+        padding: 0 1em;
+        text-align: center;
+        margin-left: 1em;
+        
+        nav {
+            padding-right: 1em;
+
+        }
+
+    }
+
+
+    &__info {
+        display: flex;
+        padding-top: 1em;
+        justify-content: space-evenly;
+        
+        span {
+            text-align: center;
+            padding: 0 2em;
+            border-radius: 2em;
+            border: 1px solid $black;
+        }
+
+        h6 {
+            position: relative;
+            top:3em;
+            right:  7em;
+            font-size: 0.8em;
+            font-weight: 300;
+            
+        }
+    }
+
+
+}
+
+.texto {
+   margin-top: 2em;
+  
+
+   h5 {
+    
+    font-size: 2em;
+    font-weight: 400;
+    padding-bottom: 1em;
+   }
+
+   p {
+    
+    font-size: 0.8em;
+   }
+
+   
+}
+

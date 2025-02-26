@@ -1,0 +1,41 @@
+@import 'styles/variaveis';
+
+
+.cabecalho {
+    background-color: $cinza;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 2em 0 2em;
+    font-size: 2em;
+    padding: 0.5em;
+
+    &__item {
+        display: flex;
+        nav {
+            padding-left: 2em;
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+
+    &__botao {
+        border-radius: 2em;
+        background-color: $yellow;
+        font-family: "Anton", sans-serif;
+        padding: 0 3em;
+        text-transform: lowercase;
+        color: $black;
+        border: none;
+        
+        &:hover {
+            color: $cinza;
+            cursor: pointer;
+        }
+    }
+
+}
+

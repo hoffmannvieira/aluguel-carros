@@ -1,0 +1,118 @@
+@import 'styles/variaveis';
+
+.conteudo {
+    background-color: $cinza;
+    border-radius: 2em;
+    margin: 2em 2em;
+
+
+    h1 {
+        text-align: center;
+        font-size: 4em;
+        padding: 0.5em 0;
+        font-family: "Anton", sans-serif;
+        text-transform: uppercase;
+    }
+
+
+
+
+}
+
+.carros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2em 2em;
+    padding-bottom: 2em;
+    gap: 1em;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+
+        h3 {
+            font-family: $fontesecundaria;
+            text-transform: uppercase;
+        }
+
+       
+    }
+
+    &__botao {
+        border-radius: 1em;
+        background-color: $yellow;
+        text-transform: uppercase;
+        border: none;
+        padding: 1em 2em;
+        font-family: $fontesecundaria;
+        cursor: pointer;
+    }
+
+    &__botao--rented {
+        background-color: $black;
+        color: $yellow;
+    }
+}
+
+.content {
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $cinza;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+        gap: 1em;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    
+         
+    }
+
+    &__overlay > * {
+        transform: translateY(2em);
+        transition: transform 0.25s;
+    }
+
+     &__overlay:hover {
+        opacity: 1;
+        
+     }
+     &__overlay:hover >  * {
+        transform: translateY(0);
+        
+     }
+
+}
+
+.content--ativo {
+    position: relative;
+}
+
+.content--ativo::after {
+    content: '';
+    
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(1, 3, 14, 0.4);
+}

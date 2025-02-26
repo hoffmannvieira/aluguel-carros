@@ -1,0 +1,23 @@
+[
+    { 
+        "id": 1,
+        "nome": "Fesrrari",
+        "valor": "2500",
+        "foto": "/assets/carroTeste.jpg",
+        "botao": false
+    },
+    { 
+        "id": 2,
+        "nome": "Corsalette",
+        "valor": "3700",
+        "foto": "/assets/carro1.png",
+        "botao": false
+    },
+    { 
+        "id": 3,
+        "nome": "Sopruo",
+        "valor": "7000",
+        "foto": "/assets/Max Verstappen.jpg",
+        "botao": false
+    }
+]
